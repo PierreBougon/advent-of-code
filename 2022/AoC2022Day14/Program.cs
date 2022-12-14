@@ -227,8 +227,6 @@ var sandBlocked = false;
 var isInfiniteFall = false;
 var tot = 0;
 
-// Start sand simulation
-var move = 0;
 while (!isInfiniteFall)
 {
     if (sandBlocked)
@@ -237,20 +235,6 @@ while (!isInfiniteFall)
         sandCurrentPos.Y = sandStartPos.Y;
         sandBlocked = false;
     }
-
-
-    // DEBUG
-    //if (move % 1000 == 0)
-    //{
-    //    for (int y = 0; y < map.Length; y++)
-    //    {
-    //        for (int x = 0; x < map[y].Length; x++)
-    //        {
-    //            Console.Write(map[y][x]);
-    //        }
-    //        Console.Write('\n');
-    //    }
-    //}
 
     TryMoveSand();
 }
