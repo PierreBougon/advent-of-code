@@ -528,20 +528,12 @@ Result ComparePacketPair(Packet left, Packet right)
     // Start actual recursive pair comparison
     var res = RecursivePairComparison(left.Sequence, right.Sequence);
 
-    if (res == Result.Equal)
-    {
-        // DOES NOT HAPPEN
-        // VERIFIED
-    }
-
     return res;
 }
 
 Result RecursivePairComparison(List<SequenceItem> firstSequence, List<SequenceItem> secondSequence)
 {
     // Inner list index, this is not a shared index of the input
-    // [1, [1,2,3] ]
-    // [1, [1,2,[]] ]
     var i = 0;
 
     while (true)
