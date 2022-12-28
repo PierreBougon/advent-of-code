@@ -166,9 +166,9 @@ var maxTicks = 30L;
 var maxPressure = 0L;
 var alternativeMaxPressure = 0L;
 
-var minDepth = 16;
+var minDepth = 4;
 // Play with this value to give larger depth to the guess
-var maxDepth = 30;
+var maxDepth = 17;
 var tasks = new List<Task>();
 
 for (var depth = minDepth; depth <= maxDepth; depth++)
